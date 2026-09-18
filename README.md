@@ -2,8 +2,10 @@
 
 **Author:** Professor Ameet Vaman Revankar (`drameetr@gmail.com`)  
 **Entity:** DenMed AI  
-**Directory:** `d:\partof_BP3D_4.0_obj_99\physiology\`  
-**Local Development:** [http://localhost:5174/](http://localhost:5174/)  
+**Live Interactive Simulator:** [https://drameet.github.io/stomatognathic-physiology/](https://drameet.github.io/stomatognathic-physiology/)  
+**GitHub Repository:** [https://github.com/drameet/stomatognathic-physiology](https://github.com/drameet/stomatognathic-physiology)  
+**LinkedIn:** [Ameet Vaman (PhD)](https://www.linkedin.com/in/ameet-vaman-phd-314bbb94/)  
+**WhatsApp Community:** [Join Discussion Group](https://chat.whatsapp.com/E6HyXAAuu0fERXlLh0TDiV?s=cl&p=i&mlu=4&ilr=4)  
 
 ---
 

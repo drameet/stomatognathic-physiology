@@ -1,13 +1,13 @@
-import os
-import trimesh
-import numpy as np
+from pathlib import Path
 
-MUSCLE_DIR = r"d:\partof_BP3D_4.0_obj_99\physiology\public\models\muscles"
-OUTPUT_GLB = r"d:\partof_BP3D_4.0_obj_99\physiology\public\models\masticatory_muscles.glb"
+BASE_DIR = Path(__file__).resolve().parent.parent
+MUSCLE_DIR = BASE_DIR / "public" / "models" / "muscles"
+OUTPUT_GLB = BASE_DIR / "public" / "models" / "masticatory_muscles.glb"
 
 # Base skull and mandible from 4.0
-SKULL_4_0_PATH = r"d:\partof_BP3D_4.0_obj_99\partof_BP3D_4.0_obj_99\FJ3394.obj" # Sphenoid
-MANDIBLE_4_0_PATH = r"d:\partof_BP3D_4.0_obj_99\partof_BP3D_4.0_obj_99\FJ3392.obj" # Mandible
+PARENT_DIR = BASE_DIR.parent
+SKULL_4_0_PATH = PARENT_DIR / "partof_BP3D_4.0_obj_99" / "FJ3394.obj" # Sphenoid
+MANDIBLE_4_0_PATH = PARENT_DIR / "partof_BP3D_4.0_obj_99" / "FJ3392.obj" # Mandible
 
 def process_muscles():
     if not os.path.exists(MUSCLE_DIR):

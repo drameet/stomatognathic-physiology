@@ -1,9 +1,9 @@
 # PROJECT MEMORY: Stomatognathic Biomechanics & TMJ Load Lab ("Within · Stomatognathic Physiology")
 
-**Project Subdirectory:** `d:\partof_BP3D_4.0_obj_99\physiology\`  
 **Author:** Professor Ameet Vaman Revankar (drameetr@gmail.com)  
 **Entity:** DenMed AI  
-**Dev Server:** [http://localhost:5174/](http://localhost:5174/)  
+**Live Production URL:** [https://drameet.github.io/stomatognathic-physiology/](https://drameet.github.io/stomatognathic-physiology/)  
+**GitHub Repository:** [https://github.com/drameet/stomatognathic-physiology](https://github.com/drameet/stomatognathic-physiology)  
 **Tech Stack:** React 18, TypeScript, Three.js, Tailwind CSS, Vite
 
 ---
