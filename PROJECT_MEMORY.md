@@ -92,6 +92,12 @@ An interactive 3D WebGL computational physiology sandbox modeling the human stom
    - Synthesized and mixed an ambient instrumental backing track (Ab maj9 - Bb add9 - Cm7 - Eb maj9 progression, warm analog pad, plucked acoustic overtones, subtle stereo panning, and soft fade-in/fade-out) encoded at 192 kbps AAC stereo.
    - Saved to `physiology/public/stomatognathic_physiology_demo.mp4` and copied to artifacts for download and sharing.
 
+11. **Live Production Deployment to GitHub Pages:**
+   - **Repository:** `https://github.com/drameet/stomatognathic-physiology`
+   - **Live Production URL:** `https://drameet.github.io/stomatognathic-physiology/`
+   - Configured automated GitHub Actions workflow (`.github/workflows/deploy.yml`) on `main` branch.
+   - Verified live site loads craniomandibular WebGL geometry, muscles, telemetry panel, Posselt envelope, bite clench presets, author attribution, and social badges.
+
 ---
 
 *For Professor Revankar's Clinical Validation.*
