@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Production build output
+dist/
+
+# Raw Java / simulation ground-truth reference
+ground_truth/
+
+# Temp & OS files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+.tempmediaStorage
+stomatognathic_physiology_linkedin_demo.mp4

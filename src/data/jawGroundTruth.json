@@ -1,0 +1,406 @@
+{
+  "metadata": {
+    "source": "ArtiSynth / SimTK Hannam & Stavness Jaw Model",
+    "paper": "Peck et al. 2000 Arch Oral Biol, Hannam et al. 2008 J Biomech",
+    "units": {
+      "distance": "millimeters (mm)",
+      "force": "Newtons (N)",
+      "angles": "degrees"
+    }
+  },
+  "kinematicDefaults": {
+    "condylarGuidanceAngleDeg": 35,
+    "bennettAngleDeg": 15,
+    "terminalHingeLimitMm": 20,
+    "maxIncisalOpeningMm": 50,
+    "maxProtrusionMm": 10,
+    "maxLateralExcursionMm": 10,
+    "bicondylarWidthMm": 110,
+    "condyleCenterOffset": [
+      0,
+      15,
+      -25
+    ]
+  },
+  "referenceLandmarks": {
+    "incisalPoint": [
+      0.0,
+      -74.5,
+      52.0
+    ],
+    "leftMolarPoint": [
+      23.5,
+      -67.1,
+      28.0
+    ],
+    "rightMolarPoint": [
+      -23.8,
+      -67.1,
+      28.0
+    ],
+    "leftCaninePoint": [
+      12.2,
+      -75.0,
+      48.5
+    ],
+    "rightCaninePoint": [
+      -12.5,
+      -75.0,
+      48.5
+    ],
+    "leftCondylePole": [
+      43.8,
+      -11.4,
+      -23.5
+    ],
+    "rightCondylePole": [
+      -43.8,
+      -11.4,
+      -23.5
+    ]
+  },
+  "muscles": [
+    {
+      "id": "l_sm",
+      "name": "Left Superficial Masseter",
+      "group": "Masseter",
+      "side": "left",
+      "fmax": 190.4,
+      "originBody": "maxilla",
+      "insertionBody": "jaw",
+      "origin": [
+        48.0,
+        -18.0,
+        24.0
+      ],
+      "insertion": [
+        45.0,
+        -78.0,
+        2.0
+      ]
+    },
+    {
+      "id": "r_sm",
+      "name": "Right Superficial Masseter",
+      "group": "Masseter",
+      "side": "right",
+      "fmax": 190.4,
+      "originBody": "maxilla",
+      "insertionBody": "jaw",
+      "origin": [
+        -48.0,
+        -18.0,
+        24.0
+      ],
+      "insertion": [
+        -45.0,
+        -78.0,
+        2.0
+      ]
+    },
+    {
+      "id": "l_dm",
+      "name": "Left Deep Masseter",
+      "group": "Masseter",
+      "side": "left",
+      "fmax": 81.6,
+      "originBody": "maxilla",
+      "insertionBody": "jaw",
+      "origin": [
+        47.0,
+        -14.0,
+        5.0
+      ],
+      "insertion": [
+        44.0,
+        -50.0,
+        -5.0
+      ]
+    },
+    {
+      "id": "r_dm",
+      "name": "Right Deep Masseter",
+      "group": "Masseter",
+      "side": "right",
+      "fmax": 81.6,
+      "originBody": "maxilla",
+      "insertionBody": "jaw",
+      "origin": [
+        -47.0,
+        -14.0,
+        5.0
+      ],
+      "insertion": [
+        -44.0,
+        -50.0,
+        -5.0
+      ]
+    },
+    {
+      "id": "l_at",
+      "name": "Left Anterior Temporalis",
+      "group": "Temporalis",
+      "side": "left",
+      "fmax": 158.0,
+      "originBody": "cranium",
+      "insertionBody": "jaw",
+      "origin": [
+        46.0,
+        28.0,
+        20.0
+      ],
+      "insertion": [
+        39.0,
+        -20.0,
+        16.0
+      ]
+    },
+    {
+      "id": "r_at",
+      "name": "Right Anterior Temporalis",
+      "group": "Temporalis",
+      "side": "right",
+      "fmax": 158.0,
+      "originBody": "cranium",
+      "insertionBody": "jaw",
+      "origin": [
+        -46.0,
+        28.0,
+        20.0
+      ],
+      "insertion": [
+        -39.0,
+        -20.0,
+        16.0
+      ]
+    },
+    {
+      "id": "l_mt",
+      "name": "Left Middle Temporalis",
+      "group": "Temporalis",
+      "side": "left",
+      "fmax": 95.6,
+      "originBody": "cranium",
+      "insertionBody": "jaw",
+      "origin": [
+        50.0,
+        32.0,
+        -5.0
+      ],
+      "insertion": [
+        41.0,
+        -26.0,
+        12.0
+      ]
+    },
+    {
+      "id": "r_mt",
+      "name": "Right Middle Temporalis",
+      "group": "Temporalis",
+      "side": "right",
+      "fmax": 95.6,
+      "originBody": "cranium",
+      "insertionBody": "jaw",
+      "origin": [
+        -50.0,
+        32.0,
+        -5.0
+      ],
+      "insertion": [
+        -41.0,
+        -26.0,
+        12.0
+      ]
+    },
+    {
+      "id": "l_pt",
+      "name": "Left Posterior Temporalis",
+      "group": "Temporalis",
+      "side": "left",
+      "fmax": 75.6,
+      "originBody": "cranium",
+      "insertionBody": "jaw",
+      "origin": [
+        48.0,
+        12.0,
+        -32.0
+      ],
+      "insertion": [
+        39.0,
+        -24.0,
+        6.0
+      ]
+    },
+    {
+      "id": "r_pt",
+      "name": "Right Posterior Temporalis",
+      "group": "Temporalis",
+      "side": "right",
+      "fmax": 75.6,
+      "originBody": "cranium",
+      "insertionBody": "jaw",
+      "origin": [
+        -48.0,
+        12.0,
+        -32.0
+      ],
+      "insertion": [
+        -39.0,
+        -24.0,
+        6.0
+      ]
+    },
+    {
+      "id": "l_mp",
+      "name": "Left Medial Pterygoid",
+      "group": "Medial Pterygoid",
+      "side": "left",
+      "fmax": 160.0,
+      "originBody": "cranium",
+      "insertionBody": "jaw",
+      "origin": [
+        18.0,
+        -32.0,
+        5.0
+      ],
+      "insertion": [
+        36.0,
+        -74.0,
+        -4.0
+      ]
+    },
+    {
+      "id": "r_mp",
+      "name": "Right Medial Pterygoid",
+      "group": "Medial Pterygoid",
+      "side": "right",
+      "fmax": 160.0,
+      "originBody": "cranium",
+      "insertionBody": "jaw",
+      "origin": [
+        -18.0,
+        -32.0,
+        5.0
+      ],
+      "insertion": [
+        -36.0,
+        -74.0,
+        -4.0
+      ]
+    },
+    {
+      "id": "l_ilp",
+      "name": "Left Inferior Lateral Pterygoid",
+      "group": "Lateral Pterygoid",
+      "side": "left",
+      "fmax": 65.0,
+      "originBody": "cranium",
+      "insertionBody": "jaw",
+      "origin": [
+        22.0,
+        -32.0,
+        8.0
+      ],
+      "insertion": [
+        38.0,
+        -18.0,
+        -18.0
+      ]
+    },
+    {
+      "id": "r_ilp",
+      "name": "Right Inferior Lateral Pterygoid",
+      "group": "Lateral Pterygoid",
+      "side": "right",
+      "fmax": 65.0,
+      "originBody": "cranium",
+      "insertionBody": "jaw",
+      "origin": [
+        -22.0,
+        -32.0,
+        8.0
+      ],
+      "insertion": [
+        -38.0,
+        -18.0,
+        -18.0
+      ]
+    },
+    {
+      "id": "l_slp",
+      "name": "Left Superior Lateral Pterygoid",
+      "group": "Lateral Pterygoid",
+      "side": "left",
+      "fmax": 35.0,
+      "originBody": "cranium",
+      "insertionBody": "jaw",
+      "origin": [
+        26.0,
+        -18.0,
+        5.0
+      ],
+      "insertion": [
+        40.0,
+        -14.0,
+        -20.0
+      ]
+    },
+    {
+      "id": "r_slp",
+      "name": "Right Superior Lateral Pterygoid",
+      "group": "Lateral Pterygoid",
+      "side": "right",
+      "fmax": 35.0,
+      "originBody": "cranium",
+      "insertionBody": "jaw",
+      "origin": [
+        -26.0,
+        -18.0,
+        5.0
+      ],
+      "insertion": [
+        -40.0,
+        -14.0,
+        -20.0
+      ]
+    },
+    {
+      "id": "l_ad",
+      "name": "Left Anterior Digastric",
+      "group": "Digastric",
+      "side": "left",
+      "fmax": 40.0,
+      "originBody": "jaw",
+      "insertionBody": "hyoid",
+      "origin": [
+        6.5,
+        -90.0,
+        40.5
+      ],
+      "insertion": [
+        10.0,
+        -92.5,
+        5.0
+      ]
+    },
+    {
+      "id": "r_ad",
+      "name": "Right Anterior Digastric",
+      "group": "Digastric",
+      "side": "right",
+      "fmax": 40.0,
+      "originBody": "jaw",
+      "insertionBody": "hyoid",
+      "origin": [
+        -6.5,
+        -90.0,
+        40.5
+      ],
+      "insertion": [
+        -10.0,
+        -92.5,
+        5.0
+      ]
+    }
+  ]
+}
